@@ -1,0 +1,156 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.homepage {
+    color: #333;
+}
+
+.hero {
+    background-image: url('hero-image.png'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.hero-content button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-content button:hover {
+    background-color: #e65500;
+}
+
+.overview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.feature {
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 102, 0, 0.2); /* Subtle orange background */
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(0.95);
+    z-index: -1;
+}
+
+.feature:hover::before {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5); /* Subtle rounded glow */
+}
+
+.feature:hover {
+    background-color: #ff6600; /* Orange background */
+    transform: scale(1.05); /* Zoom-in effect */
+    color: white; /* Change text color on hover */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cta {
+    background-color: #ff6600;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta button {
+    background-color: white;
+    color: #ff6600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cta button:hover {
+    background-color: #f4f4f4;
+}
+
+/* Add hover effect for the "Explore More" button */
+#explore-btn {
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+
+#explore-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 102, 0, 0.2); /* Subtle orange background */
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(0.95);
+    z-index: -1;
+}
+
+#explore-btn:hover::before {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5); /* Subtle rounded glow */
+}
+
+#explore-btn:hover {
+    background-color: #ff6600; /* Orange background */
+    transform: scale(1.05); /* Zoom-in effect */
+    color: white; /* Change text color on hover */
+}
