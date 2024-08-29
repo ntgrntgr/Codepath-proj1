@@ -120,7 +120,9 @@ body {
 }
 
 .cta button:hover {
-    background-color: #f4f4f4;
+    
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
 }
 
 /* Add hover effect for the "Explore More" button */
