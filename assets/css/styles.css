@@ -1,5 +1,5 @@
 /* styles.css */
-
+/*below is for the homepage*/
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -10,7 +10,7 @@ body {
 }
 
 .hero {
-    background-image: url('hero-image.png'); /* Replace with actual path */
+    background-image: url('/assets/images/hero-image.png'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -154,3 +154,59 @@ body {
     transform: scale(1.05); /* Zoom-in effect */
     color: white; /* Change text color on hover */
 }
+
+/*below is for preparation tips page*/
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .steps, .ocu-highlight, .extra-tips {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .steps h2, .ocu-highlight h2, .extra-tips h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .step, .tip {
+    margin-bottom: 30px;
+  }
+  
+  .ocu-highlight {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+  }
+  
+  .ocu-highlight ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ocu-highlight ul li {
+    margin: 10px 0;
+  }
+  
+  .ocu-highlight button {
+    background-color: white;
+    color: #ff6600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .ocu-highlight button:hover {
+    background-color: #f4f4f4;
+  }
+  
+ 

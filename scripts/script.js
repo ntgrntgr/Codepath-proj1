@@ -20,3 +20,10 @@ document.getElementById('job-opportunities').addEventListener('click', function(
 document.getElementById('preparation-tips').addEventListener('click', function() {
     window.location.href = 'preparation-tips.html'; // Update with the actual URL
 });
+
+// Script for preparation tips.html
+function visitOcu() {
+    // Redirect to Oklahoma Christian University's Computer Science program page
+    window.location.href = 'https://www.oc.edu/academics/majors/computer-science'; // Replace with the actual URL
+  }
+  
