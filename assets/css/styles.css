@@ -10,7 +10,7 @@ body {
 }
 
 .hero {
-    background-image: url('/assets/images/hero-image.png'); /* Replace with actual path */
+    background-image: url('../images/hero-image.png'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -209,4 +209,19 @@ header {
     background-color: #f4f4f4;
   }
   
- 
+ /* Full-Screen Field Styling */
+.cs-overview .field {
+    height: 100vh; /* Set the height of each field to be full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.cs-overview img {
+    max-height: 60%; /* Adjust image size */
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and text */
+}
