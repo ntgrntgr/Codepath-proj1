@@ -116,9 +116,11 @@ Eg the Career Paths feature or Preparation tips feature */
 }
 
 .feature:hover {
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.7s;
     background-color: #ff6600; /* Orange background */
     transform: scale(1.05); /* Zoom-in effect */
     color: white; /* Change text color on hover */
+    
 }
 
 .feature h3 {
@@ -156,6 +158,7 @@ the call to action is, thats where the Get started button is located*/
 
 .cta button:hover {
     
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
 }
