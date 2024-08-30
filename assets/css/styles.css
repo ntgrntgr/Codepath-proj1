@@ -8,7 +8,8 @@ body {
 .homepage {
     color: #333;
 }
-
+/* below is for the part of the homepage with picture(call it header) */
+/* Everything below here is the styling, if you want to make changes to this part go for it */
 .hero {
     background-image: url('../images/hero-image.png'); /* Replace with actual path */
     background-size: cover;
@@ -41,12 +42,45 @@ body {
 .hero-content button:hover {
     background-color: #e65500;
 }
+/* Add hover effect for the "Explore More" button (which is in the hero section too)*/
+#explore-btn {
+    cursor: pointer;    
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+}
+
+#explore-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 102, 0, 0.2); /* Subtle orange background */
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(0.95);
+    z-index: -1;
+}
+
+#explore-btn:hover::before {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5); /* Subtle rounded glow */
+}
+
+#explore-btn:hover {
+    background-color: #ff6600; /* Orange background */
+    transform: scale(1.05); /* Zoom-in effect */
+    color: white; /* Change text color on hover */
+}
+
 
 .overview {
     padding: 50px 20px;
     text-align: center;
 }
-
+/*Below this is the part of the homepage with links to other pages 
+Eg the Career Paths feature or Preparation tips feature */
 .features {
     display: flex;
     justify-content: space-around;
@@ -91,7 +125,8 @@ body {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-
+/*Below this is stylings for the Orange part at the bottom of the homepage, where
+the call to action is, thats where the Get started button is located*/
 .cta {
     background-color: #ff6600;
     color: white;
@@ -125,44 +160,18 @@ body {
     box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
 }
 
-/* Add hover effect for the "Explore More" button */
-#explore-btn {
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-    position: relative;
-}
-
-#explore-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px; /* Rounded corners */
-    background: rgba(255, 102, 0, 0.2); /* Subtle orange background */
-    transition: transform 0.3s, box-shadow 0.3s;
-    transform: scale(0.95);
-    z-index: -1;
-}
-
-#explore-btn:hover::before {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5); /* Subtle rounded glow */
-}
-
-#explore-btn:hover {
-    background-color: #ff6600; /* Orange background */
-    transform: scale(1.05); /* Zoom-in effect */
-    color: white; /* Change text color on hover */
-}
-
 /*below is for preparation tips page*/
 
 header {
+    background-image: url('../images/ai.png'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
+   /* padding: 50px 20px;*/
+    /*background-color: #f4f4f4;*/
+    color: #e9e3e3;
+
   }
   
   .steps, .ocu-highlight, .extra-tips {
