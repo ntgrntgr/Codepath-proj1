@@ -5,6 +5,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.cs-overview {
+    text-align: center;
+    background-image: url('../images/or1.jpg'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #333;
+}
+
 .homepage {
     color: #333;
 }
@@ -255,3 +264,4 @@ header {
 .hidden-content.show {
     top: 0;
 }
+
