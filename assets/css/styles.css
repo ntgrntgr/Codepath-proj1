@@ -5,14 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.cs-overview {
-    text-align: center;
-    background-image: url('../images/or1.jpg'); /* Replace with actual path */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    color: #333;
-}
+
 
 .homepage {
     color: #333;
@@ -172,6 +165,28 @@ the call to action is, thats where the Get started button is located*/
     box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
 }
 
+.cs-overview {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cs-overview-top {
+    background-color: #ff6600;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.cs-overview-top h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cs-overview-top p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
 /*below is for preparation tips page*/
 
 header {
@@ -186,6 +201,11 @@ header {
 
   }
   
+  .stepheader{
+    text-align: center;
+  }
+
+
   .steps, .ocu-highlight, .extra-tips {
     padding: 50px 20px;
     max-width: 1200px;
@@ -200,6 +220,25 @@ header {
   .step, .tip {
     margin-bottom: 30px;
   }
+
+  .steps, .extra-tips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Adtip {
+
+    text-align: center;
+}
+.step, .tip {
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
   
   .ocu-highlight {
     background-color: #ff6600;
@@ -264,4 +303,6 @@ header {
 .hidden-content.show {
     top: 0;
 }
+
+
 
