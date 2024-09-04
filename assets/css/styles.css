@@ -216,6 +216,11 @@ header {
     text-align: center;
     margin-bottom: 30px;
   }
+
+  .step h3 {
+    text-decoration: underline #ff6600;
+    
+}
   
   .step, .tip {
     margin-bottom: 30px;
@@ -241,7 +246,7 @@ header {
 }
   
   .ocu-highlight {
-    background-color: #ff6600;
+    background-color: #504e4d;
     color: white;
     text-align: center;
     padding: 60px 20px;
