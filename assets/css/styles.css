@@ -187,6 +187,25 @@ the call to action is, thats where the Get started button is located*/
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
+/*below is for career paths page*/
+
+.header {
+    background-image: url('../images/career-paths.png'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #e9e3e3;
+}
+
+.cstepheader {
+    background-color: #ff6600;
+    padding: 10px 4px;
+    text-align: center;
+    color: white;
+}
+
+
 /*below is for preparation tips page*/
 
 header {
