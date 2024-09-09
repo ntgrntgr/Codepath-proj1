@@ -190,7 +190,7 @@ the call to action is, thats where the Get started button is located*/
 /*below is for preparation tips page*/
 
 header {
-    background-image: url('../images/ai.png'); /* Replace with actual path */
+    background-image: url('../images/hero1.avif'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -315,8 +315,9 @@ header {
     display: flex;
     overflow-x: auto; /* Allow horizontal scrolling if content overflows */
     gap: 20px; /* Space between job items */
-    padding: 20px;
-    background-color: #f4f4f4; /* Light background for the section */
+    padding: 10px 80px;
+    background-color: #eae4e1; /* Light background for the section */
+    text-align: center;
 }
 
 .job {
@@ -333,10 +334,18 @@ header {
     text-align: center; /* Center text inside job items */
 }
 
-.job:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+.job:hover::before {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5); /* Subtle rounded glow */
 }
 
+.job:hover {
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.7s;
+    background-color: #ff6600; /* Orange background */
+    transform: scale(1.05); /* Zoom-in effect */
+    color: rgb(255, 255, 255); /* Change text color on hover */
+    
+}
 .job img {
     width: 100%; /* Full width of container */
     height: 150px; /* Fixed height for images */
