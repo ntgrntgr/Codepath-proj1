@@ -1,0 +1,148 @@
+/* General Styling */
+* {
+    margin: 0;
+   
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    /*line-height: 1.6;
+    */background-color: #f4f4f4;
+}
+
+header {
+    background-color:white; /* Orange background */
+    background-size: 200px  ;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    padding: 2rem;
+    background-image: url('../images/orangesvg.jpg'); 
+    font-family: 'inter' , sans-serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: black;
+   
+
+    
+}
+
+
+
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    margin: 1rem 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+#why-cs ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Interactive Career Path Styling */
+#career-paths .career-path {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-top:2.5px solid #ff6600;
+    /*border-left: 5px solid #ff6600; /* Orange border for career paths */
+    overflow: hidden;
+    max-height: 50px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.2s ease-in-out; /* Short transition duration */
+    cursor: pointer;
+    
+}
+
+#career-paths .career-path:hover {
+    max-height: 250px; /* Expands on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+    background-color:#ff6600;
+    color: white;
+    transition: transform 0.8s;
+    
+}
+#career-paths .career-path:hover h3{
+    color: white;
+}
+
+#career-paths h3 {
+    font-size: 1.5rem;
+    color:black;
+    margin-bottom: 0.3rem;
+    
+}
+
+#career-paths p, #career-paths strong {
+    display: flex; /* Hide details initially */
+}
+
+#career-paths .career-path:hover p,
+#career-paths .career-path:hover strong {
+    display:flex; /* Show details when section expands */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ff6600; /* Orange footer */
+    color: white;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    text-decoration: underline;
+}
+
+/*navigation bar section*/
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar-item a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 4px;
+}
+
+.navbar-item a:hover {
+    background-color: #ff6600;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
