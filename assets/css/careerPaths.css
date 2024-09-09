@@ -13,12 +13,14 @@ body {
 }
 
 header {
-    background-color: #ff6600; /* Orange background */
-    background-size: cover;
+    background-color:white; /* Orange background */
+    background-size: 200px  ;
+    background-repeat: no-repeat;
     color: black;
     text-align: center;
     padding: 2rem;
-    background-image: url('../images/hero-image.png'); 
+    background-image: url('../images/orangesvg.jpg'); 
+    font-family: 'inter' , sans-serif;
 }
 
 header h1 {
@@ -60,7 +62,7 @@ h2 {
     background-color: #f4f4f4;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    border-top:5px solid #ff6600;
+    border-top:2.5px solid #ff6600;
     /*border-left: 5px solid #ff6600; /* Orange border for career paths */
     overflow: hidden;
     max-height: 50px;
