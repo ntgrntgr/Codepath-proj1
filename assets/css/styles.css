@@ -13,12 +13,41 @@ body {
 /* below is for the part of the homepage with picture(call it header) */
 /* Everything below here is the styling, if you want to make changes to this part go for it */
 .hero {
+    position: relative; /* Ensure positioning context for absolute children */
+    z-index: 1; /* Set a higher z-index for the text */
+    overflow: hidden; /* Hide overflow for smooth transitions */
     background-image: url('../images/hero-image.png'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
     color: #333;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; /* Set a lower z-index for the background */
+    animation: slide 12s infinite; /* Adjust duration for total time of all images */
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+@keyframes slide {
+    0% { background-image: url('../images/hero-image1.png'); opacity: 1; }
+    33% { background-image: url('../images/hero-image-2.jpg'); opacity: 1; }
+    34% { opacity: 0; }
+    66% { background-image: url('../images/hero-image-3.webp'); opacity: 0; }
+    67% { background-image: url('../images/hero-image-3.webp'); opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.hero-content {
+    position: relative; /* Position relative to the hero section */
+    z-index: 2; /* Higher z-index to keep it above the background */
 }
 
 .hero-content h1 {
@@ -187,95 +216,7 @@ the call to action is, thats where the Get started button is located*/
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
-/*below is for preparation tips page*/
 
-header {
-    background-image: url('../images/ai.png'); /* Replace with actual path */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    text-align: center;
-   /* padding: 50px 20px;*/
-    /*background-color: #f4f4f4;*/
-    color: #e9e3e3;
-
-  }
-  
-  .stepheader{
-    text-align: center;
-  }
-
-
-  .steps, .ocu-highlight, .extra-tips {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .steps h2, .ocu-highlight h2, .extra-tips h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .step h3 {
-    text-decoration: underline #ff6600;
-    
-}
-  
-  .step, .tip {
-    margin-bottom: 30px;
-  }
-
-  .steps, .extra-tips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.Adtip {
-
-    text-align: center;
-}
-.step, .tip {
-    flex: 1;
-    min-width: 200px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-  
-  .ocu-highlight {
-    background-color: #504e4d;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    border-radius: 10px;
-  }
-  
-  .ocu-highlight ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .ocu-highlight ul li {
-    margin: 10px 0;
-  }
-  
-  .ocu-highlight button {
-    background-color: white;
-    color: #ff6600;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .ocu-highlight button:hover {
-    background-color: #f4f4f4;
-  }
-  
  /* Full-Screen Field Styling */
 .cs-overview .field {
     height: 100vh; /* Set the height of each field to be full viewport height */
