@@ -26,6 +26,10 @@ function visitOcu() {
     // Redirect to Oklahoma Christian University's Computer Science program page
     window.location.href = 'https://www.oc.edu/academics/majors/computer-science'; // Replace with the actual URL
 }
+function findJobes() {
+    //More career Job Opportunities
+    window.location.href = 'https://www.indeed.com/jobs?q=computer+science&l=&from=searchOnHP&vjk=70afb95a7806db1a'; // Replace with the actual URL
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     const getStartedBtn = document.getElementById('get-started-btn');
