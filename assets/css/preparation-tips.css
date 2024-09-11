@@ -1,4 +1,10 @@
 /*below is for preparation tips page*/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 
 header {
     background-image: url('../images/ai.png'); /* Replace with actual path */
@@ -30,6 +36,7 @@ header {
 
   .step h3 {
     text-decoration: underline #ff6600;
+    cursor: pointer;
     
 }
   
@@ -87,3 +94,9 @@ header {
     background-color: #f4f4f4;
   }
   
+  .cta {
+    background-color: #ff6600;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
