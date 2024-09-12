@@ -205,7 +205,7 @@ the call to action is, thats where the Get started button is located*/
     color: white;
     padding: 50px 20px;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cs-background.jpg'); /* Parallax background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/SoftwareEngineering.jpg'); /* Parallax background */
     background-attachment: fixed; /* Parallax effect */
     background-size: cover; /* Cover the entire section */
 }
@@ -225,8 +225,16 @@ the call to action is, thats where the Get started button is located*/
     transition: transform 0.3s; /* Smooth hover effect */
 }
 
-.cs-overview .timeline-item:hover {
-    transform: scale(1.02); /* Slightly enlarge on hover */
+/* Trigger the visibility on scroll */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .cs-overview img {
