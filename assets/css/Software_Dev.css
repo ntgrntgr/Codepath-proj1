@@ -154,5 +154,5 @@ footer {
 }
 
 .apply-button:hover {
-    background-color: #ff6600(353, 85%, 49%);
+    background-color: hsl(353, 85%, 49%);
 }
