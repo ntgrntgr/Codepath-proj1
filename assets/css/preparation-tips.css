@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*below is for preparation tips page*/
 body {
     margin: 0;
@@ -6,12 +7,30 @@ body {
 
 
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
+
+>>>>>>> f37800e1ea71a2723faaa27853f8d058b8dc490e
 header {
     background-image: url('../images/ai.png'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
+<<<<<<< HEAD
     text-align: center;
+=======
+    /*padding: 2rem;
+    */text-align: center;
+    
+>>>>>>> f37800e1ea71a2723faaa27853f8d058b8dc490e
    /* padding: 50px 20px;*/
     /*background-color: #f4f4f4;*/
     color: #e9e3e3;
@@ -36,7 +55,10 @@ header {
 
   .step h3 {
     text-decoration: underline #ff6600;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> f37800e1ea71a2723faaa27853f8d058b8dc490e
     
 }
   
@@ -94,9 +116,44 @@ header {
     background-color: #f4f4f4;
   }
   
+<<<<<<< HEAD
   .cta {
+=======
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar-item a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 4px;
+}
+
+.navbar-item a:hover {
+    background-color: #ff6600;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.cta {
+>>>>>>> f37800e1ea71a2723faaa27853f8d058b8dc490e
     background-color: #ff6600;
     color: white;
     padding: 50px 20px;
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f37800e1ea71a2723faaa27853f8d058b8dc490e
