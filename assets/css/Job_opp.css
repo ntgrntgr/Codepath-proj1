@@ -1,49 +1,39 @@
 /* styles.css */
 /*below is for the homepage*/
+
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
 body {
     margin: 0;
+    line-height: normal;
+    
     font-family: 'Roboto', sans-serif;
 }
-
-
-
-.homepage {
-    color: #333;
-}
-/* below is for the part of the homepage with picture(call it header) */
-/* Everything below here is the styling, if you want to make changes to this part go for it */
-.hero {
-    background-image: url('../images/hero-image.png'); /* Replace with actual path */
+header {
+    background-image: url('../images/ai-revolution.jpg'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
+    padding: 0px;
+    /*padding: 2rem;
+    */text-align: center;
+    
     padding: 100px 20px;
-    text-align: center;
-    color: #333;
-}
+    background-color: white;
+    color: black;
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
+  }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
 
-.hero-content button {
-    background-color: #ff6600;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
 
-.hero-content button:hover {
-    background-color: #e65500;
-}
+
+
 /* Add hover effect for the "Explore More" button (which is in the hero section too)*/
 #explore-btn {
     cursor: pointer;    
@@ -190,14 +180,16 @@ the call to action is, thats where the Get started button is located*/
 /*below is for preparation tips page*/
 
 header {
-    background-image: url('../images/hero1.avif'); /* Replace with actual path */
+    background-image: url('../images/ai.png'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
-    text-align: center;
+    /*padding: 2rem;
+    */text-align: center;
+    
    /* padding: 50px 20px;*/
-    /*background-color: #f4f4f4;*/
-    color: #e9e3e3;
+    background-color: #f4f4f4;
+    color: black;
 
   }
   
@@ -343,8 +335,15 @@ header {
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.7s;
     background-color: #ff6600; /* Orange background */
     transform: scale(1.05); /* Zoom-in effect */
-    color: rgb(255, 255, 255); /* Change text color on hover */
+    color: white; /* Change text color on hover */
+    cursor: pointer;
     
+}
+.job:hover h3{
+    color: white;
+}
+.job:hover p{
+    color:white;
 }
 .job img {
     width: 100%; /* Full width of container */
@@ -359,12 +358,47 @@ header {
 .job h3 {
     margin: 10px 0;
     font-size: 1.2rem; /* Adjust font size as needed */
-    color: #333; /* Darker text color */
+    color: black; /* Darker text color */
 }
 
 .job p {
     font-size: 0.9rem; /* Adjust font size as needed */
-    color: #555; /* Darker text color */
+    color: black; /* Darker text color */
+}
+.navbar {
+    background-color:#f4f4f4;
+    padding-top: 0px;
+    
+  
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar-item a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    border-radius: 4px;
+}
+
+.navbar-item a:hover {
+    background-color: #ff6600;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.5s;
 }
 
 
