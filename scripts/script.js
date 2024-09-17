@@ -63,4 +63,3 @@ function updateNavColor() {
 window.onload = updateNavColor;
 // Call the function on resize to adjust if necessary
 window.onresize = updateNavColor;
-
