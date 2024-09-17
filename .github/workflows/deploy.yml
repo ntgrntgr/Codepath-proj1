@@ -28,7 +28,7 @@ jobs:
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
 <<<<<<< HEAD
-          TARGET: "/var/www/html/project1/codepath-proj1"
+          TARGET: "project1.eaglesoftwareteam.com"
 =======
-          TARGET: "/var/www/html/project1/<your-team-directory>”
+          TARGET: "/var/www/html/project1/2024/t8"
 >>>>>>> 1c056ad4d22c6b2c23ff6b7dfb6799e4f1092cb2
