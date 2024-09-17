@@ -4,11 +4,21 @@ on:
     types: [closed]
     branches:
       - dev
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c056ad4d22c6b2c23ff6b7dfb6799e4f1092cb2
 jobs:
   aws-deploy:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - uses: actions/checkout@v3
+=======
+      - uses: actions/checkout@v2
+        with:
+          ref: dev
+>>>>>>> 1c056ad4d22c6b2c23ff6b7dfb6799e4f1092cb2
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
@@ -17,4 +27,8 @@ jobs:
           SOURCE: "/"
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
+<<<<<<< HEAD
           TARGET: "/var/www/html/project1/codepath-proj1"
+=======
+          TARGET: "/var/www/html/project1/<your-team-directory>”
+>>>>>>> 1c056ad4d22c6b2c23ff6b7dfb6799e4f1092cb2
