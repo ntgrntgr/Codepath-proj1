@@ -21,4 +21,3 @@ jobs:
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
           TARGET: "/var/www/html/project1/2024/t2"
-          
