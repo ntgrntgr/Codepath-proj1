@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - dev
+      - main
 
 jobs:
   aws-deploy:
@@ -20,4 +20,4 @@ jobs:
           SOURCE: "/"
           REMOTE_HOST: "project1.eaglesoftwareteam.com"
           REMOTE_USER: ubuntu
-          TARGET: "/var/www/html/project1/2024/t8" 
+          TARGET: "/var/www/html/project1/<your-team-directory>”
