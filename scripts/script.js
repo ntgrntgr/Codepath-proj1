@@ -1,7 +1,22 @@
 // script.js
 
+// Remove the existing click event listener for the explore button
+// document.getElementById('explore-btn').addEventListener('click', function() {
+//     window.location.href = 'why-computer-science.html'; // Update with the actual URL
+// });
+
+// Add new click event listener for morphing text
 document.getElementById('explore-btn').addEventListener('click', function() {
-    window.location.href = 'why-computer-science.html'; // Update with the actual URL
+    const terms = this.getAttribute('data-terms').split(', ');
+    let index = 0;
+    
+    const morphText = () => {
+        this.textContent = terms[index];
+        index = (index + 1) % terms.length; // Loop through terms
+    };
+
+    morphText(); // Initial text change
+    setInterval(morphText, 1000); // Change text every second
 });
 
 //document.getElementById('get-started-btn').addEventListener('click', function() {
@@ -10,15 +25,15 @@ document.getElementById('explore-btn').addEventListener('click', function() {
 
 // Add event listeners for feature sections
 document.getElementById('career-paths').addEventListener('click', function() {
-    window.location.href = 'career-paths.html'; // Update with the actual URL
+    window.location.href = '/pages/career-paths.html'; // Update with the actual URL
 });
 
 document.getElementById('job-opportunities').addEventListener('click', function() {
-    window.location.href = 'job-opportunities.html'; // Update with the actual URL
+    window.location.href = '/pages/job-opportunities.html'; // Update with the actual URL
 });
 
 document.getElementById('preparation-tips').addEventListener('click', function() {
-    window.location.href = 'preparation-tips.html'; // Update with the actual URL
+    window.location.href = '/pages/preparation-tips.html'; // Update with the actual URL
 });
 
 
