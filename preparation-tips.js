@@ -1,7 +1,7 @@
 // Script for preparation tips.html
 function visitOcu() {
     // Redirect to Oklahoma Christian University's Computer Science program page
-    window.location.href = 'https://www.oc.edu/academics/majors/computer-science'; // Replace with the actual URL
+    window.location.href = 'https://www.oc.edu/academics/college-of-engineering-computer-science/computer-science/computer-science-b-s'; // Replace with the actual URL
 }
 
 function visitFreeCodeCamp() {

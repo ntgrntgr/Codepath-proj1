@@ -39,7 +39,7 @@ document.getElementById('preparation-tips').addEventListener('click', function()
 
 function findJobes() {
     //More career Job Opportunities
-    window.location.href = 'https://www.indeed.com/jobs?q=computer+science&l=&from=searchOnHP&vjk=70afb95a7806db1a'; // Replace with the actual URL
+    window.location.href = 'https://www.indeed.com/jobs?q=computer+science&l=&from=searchOnHP';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
