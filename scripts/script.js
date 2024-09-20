@@ -1,7 +1,7 @@
 // script.js
 
 document.getElementById('explore-btn').addEventListener('click', function() {
-    window.location.href = 'why-computer-science.html'; // Update with the actual URL
+    window.location.href = 'https://threejs.org'; // Update with the actual URL
 });
 
 //document.getElementById('get-started-btn').addEventListener('click', function() {
