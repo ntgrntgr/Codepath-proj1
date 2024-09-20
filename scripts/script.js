@@ -78,3 +78,16 @@ function updateNavColor() {
 window.onload = updateNavColor;
 // Call the function on resize to adjust if necessary
 window.onresize = updateNavColor;
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+// Add event listener for the Back to Top button
+document.querySelector('.back-to-top').addEventListener('click', function() {
+    window.location.href = 'index.html'; // Redirect to the homepage
+});

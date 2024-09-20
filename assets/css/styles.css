@@ -341,3 +341,20 @@ the call to action is, thats where the Get started button is located*/
     text-decoration: underline;
 }
 
+/* New Back to Top Button */
+.back-to-top {
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+    background-color: #ff6600; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+}
+
+.back-to-top:hover {
+    background-color: #e65500; /* Darker shade on hover */
+}
+
