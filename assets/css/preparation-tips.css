@@ -31,6 +31,7 @@ header {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    
   }
   
   .steps h2, .ocu-highlight h2, .extra-tips h2 {
@@ -38,10 +39,7 @@ header {
     margin-bottom: 30px;
   }
 
-  .step h3 {
-    text-decoration: underline #ff6600;
-    
-}
+  
   
   .step, .tip {
     margin-bottom: 30px;
@@ -53,6 +51,7 @@ header {
     gap: 20px;
 }
 
+
 .Adtip {
 
     text-align: center;
@@ -61,13 +60,19 @@ header {
     flex: 1;
     min-width: 200px;
     border: 1px solid #ccc;
+    color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow:  3px 3px #ff6600; /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+    background: rgba(87, 86, 86, 0.8); /* Light background for readability */
+
+
 }
   
   .ocu-highlight {
-    background-color: #504e4d;
+    background: rgba(87, 86, 86, 0.8); /* Light background for readability */
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -84,8 +89,8 @@ header {
   }
   
   .ocu-highlight button {
-    background-color: white;
-    color: #ff6600;
+    background-color: #ff6600;
+    color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
