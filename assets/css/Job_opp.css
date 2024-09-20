@@ -13,7 +13,7 @@
 body {
     margin: 0;
     line-height: normal;
-    
+    background-color: #eae4e1;
     font-family: 'Roboto', sans-serif;
 }
 header {
@@ -255,8 +255,8 @@ header {
   }
   
   .ocu-highlight button {
-    background-color: white;
-    color: #ff6600;
+    background-color: #ff6600;
+    color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -366,7 +366,7 @@ header {
     color: black; /* Darker text color */
 }
 .navbar {
-    background-color:#f4f4f4;
+    background-color:#eae4e1;
     padding-top: 0px;
     
   
@@ -402,3 +402,17 @@ header {
 }
 
 
+
+/* Add spacing between resources */
+.extra-resources .resource {
+    margin-bottom: 30px; /* Space between each resource */
+}
+
+/* Add spacing between bullet points */
+.extra-resources ul {
+    padding-left: 20px; /* Indent the list */
+}
+
+.extra-resources ul li {
+    margin-bottom: 10px; /* Space between bullet points */
+}
