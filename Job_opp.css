@@ -17,7 +17,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 header {
-    background-image: url('../images/ai-revolution.jpg'); /* Replace with actual path */
+    background-image: url('ai-revolution.jpg'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 0px;
@@ -180,7 +180,7 @@ the call to action is, thats where the Get started button is located*/
 /*below is for preparation tips page*/
 
 header {
-    background-image: url('../images/kali2.jpg'); /* Replace with actual path */
+    background-image: url('kali2.jpg'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;

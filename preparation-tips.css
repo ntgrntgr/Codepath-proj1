@@ -9,7 +9,7 @@
 }
 
 header {
-    background-image: url('../images/kali.jpg'); /* Replace with actual path */
+    background-image: url('kali.jpg'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;

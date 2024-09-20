@@ -1,9 +1,8 @@
 name: DEPLOY TO AWS
 on:
-  pull_request:
-    types: [closed]
+  push:  # Change from pull_request to push
     branches:
-      - main
+      - auto-deploy
 
 jobs:
   aws-deploy:
@@ -11,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: main
+          ref: auto-deploy
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.1
         env:

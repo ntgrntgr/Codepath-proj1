@@ -16,7 +16,7 @@ body {
     position: relative; /* Ensure positioning context for absolute children */
     z-index: 1; /* Set a higher z-index for the text */
     overflow: hidden; /* Hide overflow for smooth transitions */
-    background-image: url('../images/hero-image.png'); /* Replace with actual path */
+    background-image: url('hero-image.png'); /* Replace with actual path */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -37,11 +37,11 @@ body {
 }
 
 @keyframes slide {
-    0% { background-image: url('../images/hero-image1.png'); opacity: 1; }
-    33% { background-image: url('../images/hero-image-2.jpg'); opacity: 1; }
+    0% { background-image: url('hero-image1.png'); opacity: 1; }
+    33% { background-image: url('hero-image-2.jpg'); opacity: 1; }
     34% { opacity: 0; }
-    66% { background-image: url('../images/hero-image-3.webp'); opacity: 1; }
-    67% { background-image: url('../images/hero-image-3.webp'); opacity: 1; }
+    66% { background-image: url('hero-image-3.webp'); opacity: 1; }
+    67% { background-image: url('hero-image-3.webp'); opacity: 1; }
     100% { opacity: 1; }
 }
 
@@ -213,7 +213,7 @@ the call to action is, thats where the Get started button is located*/
     color: white;
     padding: 50px 20px;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/SoftwareEngineering.jpg'); /* Parallax background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('SoftwareEngineering.jpg'); /* Parallax background */
     background-attachment: fixed; /* Parallax effect */
     background-size: cover; /* Cover the entire section */
     
@@ -259,7 +259,7 @@ the call to action is, thats where the Get started button is located*/
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/SoftwareEngineering.jpg'); /* Parallax background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('SoftwareEngineering.jpg'); /* Parallax background */
     background-attachment: fixed; /* Parallax effect */
     background-size: cover; /* Cover the entire section */
     overflow-y: auto;

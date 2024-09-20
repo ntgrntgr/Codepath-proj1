@@ -25,15 +25,15 @@ document.getElementById('explore-btn').addEventListener('click', function() {
 
 // Add event listeners for feature sections
 document.getElementById('career-paths').addEventListener('click', function() {
-    window.location.href = '/pages/career-paths.html'; // Update with the actual URL
+    window.location.href = 'career-paths.html'; // Update with the actual URL
 });
 
 document.getElementById('job-opportunities').addEventListener('click', function() {
-    window.location.href = '/pages/job-opportunities.html'; // Update with the actual URL
+    window.location.href = 'job-opportunities.html'; // Update with the actual URL
 });
 
 document.getElementById('preparation-tips').addEventListener('click', function() {
-    window.location.href = '/pages/preparation-tips.html'; // Update with the actual URL
+    window.location.href = 'preparation-tips.html'; // Update with the actual URL
 });
 
 
